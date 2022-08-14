@@ -1,14 +1,30 @@
 // External libraries
 import React from 'react'
-import { Text } from 'react-native'
 
 // Styled
-import { Container } from './styles'
+import { Container, TouchableText } from './styles'
 
-const Touchable: React.FC = () => {
+interface TouchableProps {
+  title: string
+  touchableType: 'filled' | 'outlined'
+
+  margin?: string
+  padding?: string
+}
+
+const Touchable: React.FC<TouchableProps> = ({
+  title,
+  touchableType,
+  margin,
+  padding,
+}) => {
   return (
-    <Container>
-      <Text>aaaaaaaaa</Text>
+    <Container
+      touchableType={touchableType}
+      margin={margin}
+      padding={padding}
+      opacity={0}>
+      <TouchableText touchableType={touchableType}>{title}</TouchableText>
     </Container>
   )
 }
