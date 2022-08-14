@@ -2,8 +2,11 @@
 import React from 'react'
 import { ThemeProvider } from 'styled-components/native'
 
-// Components
-import Welcome from './screens/Welcome'
+// Contexts
+import { AuthProvider } from './contexts/Auth'
+
+// Routes
+import Routes from './routes'
 
 // Styled
 import theme from './styles/theme'
@@ -11,7 +14,9 @@ import theme from './styles/theme'
 const App: React.FC = () => {
   return (
     <ThemeProvider theme={theme}>
-      <Welcome />
+      <AuthProvider>
+        <Routes />
+      </AuthProvider>
     </ThemeProvider>
   )
 }
