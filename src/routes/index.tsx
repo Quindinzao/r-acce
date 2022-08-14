@@ -17,7 +17,7 @@ const Routes: React.FC = () => {
   }
   return (
     <NavigationContainer>
-      {authData ? <AppStack /> : <AppStack />}
+      {authData ? <AppStack /> : <AuthStack />}
     </NavigationContainer>
   )
 }

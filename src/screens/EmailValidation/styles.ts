@@ -8,3 +8,9 @@ export const Container = styled.SafeAreaView`
 
   background-color: ${props => props.theme.colors.primary};
 `
+
+export const TextContainer = styled.Text`
+  color: ${props => props.theme.colors.secondary};
+  font-size: 20px;
+  font-family: ${props => props.theme.fonts.button};
+`

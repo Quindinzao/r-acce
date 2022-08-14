@@ -1,14 +1,13 @@
 // External libraries
 import React from 'react'
-import { Text } from 'react-native'
 
 // Styled
-import { Container } from './styles'
+import { Container, TextContainer } from './styles'
 
 const Home: React.FC = () => {
   return (
     <Container>
-      <Text>Home</Text>
+      <TextContainer>Home</TextContainer>
     </Container>
   )
 }

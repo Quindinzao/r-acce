@@ -12,8 +12,8 @@ const theme: DefaultTheme = {
   },
 
   fonts: {
-    title: 'Lexend Tera - Regular - 24px',
-    button: 'Mulish - Bold - 20px',
+    title: 'LexendTera-Regular',
+    button: 'Mulish-Bold',
   },
 }
 

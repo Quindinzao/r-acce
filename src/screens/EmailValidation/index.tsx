@@ -1,14 +1,13 @@
 // External libraries
 import React from 'react'
-import { Text } from 'react-native'
 
 // Styled
-import { Container } from './styles'
+import { Container, TextContainer } from './styles'
 
 const EmailValidation: React.FC = () => {
   return (
     <Container>
-      <Text>Email Validation</Text>
+      <TextContainer>Email Validation</TextContainer>
     </Container>
   )
 }

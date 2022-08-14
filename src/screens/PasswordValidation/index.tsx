@@ -1,14 +1,13 @@
 // External libraries
 import React from 'react'
-import { Text } from 'react-native'
 
 // Styled
-import { Container } from './styles'
+import { Container, TextContainer } from './styles'
 
 const PasswordValidation: React.FC = () => {
   return (
     <Container>
-      <Text>Password Validation</Text>
+      <TextContainer>Password Validation</TextContainer>
     </Container>
   )
 }
