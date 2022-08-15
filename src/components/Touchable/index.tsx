@@ -5,16 +5,18 @@ import React from 'react'
 import { Container, TouchableText } from './styles'
 
 interface TouchableProps {
-  title: string
   touchableType: 'filled' | 'outlined'
 
+  title?: string
+  onPress?: () => void
   margin?: string
   padding?: string
 }
 
 const Touchable: React.FC<TouchableProps> = ({
-  title,
   touchableType,
+  title,
+  onPress,
   margin,
   padding,
 }) => {
@@ -23,7 +25,8 @@ const Touchable: React.FC<TouchableProps> = ({
       touchableType={touchableType}
       margin={margin}
       padding={padding}
-      opacity={0}>
+      activeOpacity={0.7}
+      onPress={onPress}>
       <TouchableText touchableType={touchableType}>{title}</TouchableText>
     </Container>
   )

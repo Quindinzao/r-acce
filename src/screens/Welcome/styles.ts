@@ -19,7 +19,7 @@ export const Title = styled.Text`
   text-transform: uppercase;
 `
 
-export const SocialMediaContainer = styled.View`
+export const SocialLoginContent = styled.View`
   width: 65%;
 
   margin-top: 18px;
@@ -27,16 +27,4 @@ export const SocialMediaContainer = styled.View`
   align-items: center;
   justify-content: space-evenly;
   flex-direction: row;
-`
-
-export const SocialMediaButton = styled.TouchableOpacity`
-  width: 48px;
-  height: 48px;
-
-  align-items: center;
-  justify-content: center;
-
-  border-radius: 24px;
-
-  background-color: ${props => props.theme.colors.secondary};
 `

@@ -6,6 +6,7 @@ const theme: DefaultTheme = {
     primary: '#1C1919',
     secondary: '#FFF8EC',
     terciary: '#654E4E',
+    quaternary: '#A68D65',
 
     default: '#CAD9C8',
     emphasis: '#FFCC00',

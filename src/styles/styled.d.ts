@@ -5,17 +5,18 @@ declare module 'styled-components' {
     title: string
 
     colors: {
-      primary: string // #1C1919
-      secondary: string // #FFF8EC
-      terciary: string // #654E4E
+      primary: string
+      secondary: string
+      terciary: string
+      quaternary: string
 
-      default: string // #CAD9C8
-      emphasis: string // #FFCC00
+      default: string
+      emphasis: string
     }
 
     fonts: {
-      title: string // Lexend Tera - Regular - 24px
-      button: string // Mulish - Bold - 20px
+      title: string
+      button: string
     }
   }
 }
