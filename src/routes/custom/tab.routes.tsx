@@ -30,6 +30,7 @@ const TabRoutes: React.FC = () => {
         tabBarShowLabel: false,
         tabBarStyle: {
           height: 56,
+          borderTopWidth: 0,
         },
       }}>
       <Screen
