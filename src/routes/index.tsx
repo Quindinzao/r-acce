@@ -15,6 +15,7 @@ const Routes: React.FC = () => {
   if (!isLoading) {
     SplashScreen.hide()
   }
+
   return (
     <NavigationContainer>
       {authData ? <AppStack /> : <AuthStack />}

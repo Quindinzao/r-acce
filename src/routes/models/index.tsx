@@ -1,10 +1,17 @@
-import { NativeStackNavigationProp } from '@react-navigation/native-stack'
+import {
+  NativeStackNavigationProp,
+  NativeStackScreenProps,
+} from '@react-navigation/native-stack'
 
 export type propsNavigationStack = {
   Welcome: undefined
   EmailValidation: undefined
-  PasswordValidation: undefined
+  PasswordValidation: { email: string }
   TabRoutes: undefined
 }
 
 export type propsStack = NativeStackNavigationProp<propsNavigationStack>
+export type propsPasswordValidationStack = NativeStackScreenProps<
+  propsNavigationStack,
+  'PasswordValidation'
+>

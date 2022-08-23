@@ -8,13 +8,15 @@ const theme: DefaultTheme = {
     terciary: '#654E4E',
     quaternary: '#A68D65',
 
+    danger: '#420000',
+
     default: '#CAD9C8',
     emphasis: '#FFCC00',
   },
 
   fonts: {
-    title: 'LexendTera-Regular',
-    button: 'Mulish-Bold',
+    h1: 'LexendTera-Regular',
+    h4: 'Mulish-Bold',
   },
 }
 

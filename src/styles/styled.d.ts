@@ -10,13 +10,15 @@ declare module 'styled-components' {
       terciary: string
       quaternary: string
 
+      danger: string
+
       default: string
       emphasis: string
     }
 
     fonts: {
-      title: string
-      button: string
+      h1: string
+      h4: string
     }
   }
 }

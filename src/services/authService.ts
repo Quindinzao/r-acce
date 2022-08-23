@@ -4,7 +4,7 @@ import { AuthData } from '../contexts/Auth'
 const SignIn = async (email: string, password: string): Promise<AuthData> => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-      if (password === 'johndoepass' && email === 'johndoe@email.com') {
+      if (password === 'johndoepass' && email === 'johndoe@acce.com') {
         resolve({
           token: 'fake-token',
           email,

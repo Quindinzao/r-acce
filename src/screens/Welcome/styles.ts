@@ -15,7 +15,7 @@ export const Title = styled.Text`
 
   color: ${props => props.theme.colors.secondary};
   font-size: 24px;
-  font-family: ${props => props.theme.fonts.title};
+  font-family: ${props => props.theme.fonts.h1};
   text-transform: uppercase;
 `
 

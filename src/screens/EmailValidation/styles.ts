@@ -1,16 +1,32 @@
 // External libraries
 import styled from 'styled-components/native'
 
-export const Container = styled.SafeAreaView`
-  flex: 1;
-  justify-content: center;
-  align-items: center;
+interface ContainerProps {
+  type: 'header' | 'body'
+  justifyContent: string
+}
 
-  background-color: ${props => props.theme.colors.primary};
+export const Content = styled.View<ContainerProps>`
+  padding: 18px;
+  flex: 1;
+  align-items: center;
+  justify-content: ${props => props.justifyContent};
+
+  background-color: ${props =>
+    props.type === 'header'
+      ? props.theme.colors.primary
+      : props.theme.colors.secondary};
 `
 
-export const TextContainer = styled.Text`
+export const TitleHeader = styled.Text`
   color: ${props => props.theme.colors.secondary};
-  font-size: 20px;
-  font-family: ${props => props.theme.fonts.button};
+  font-size: 24px;
+  font-family: ${props => props.theme.fonts.h1};
+  text-transform: uppercase;
+`
+
+export const ButtonBack = styled.TouchableOpacity`
+  position: absolute;
+  left: 18px;
+  top: 22px;
 `

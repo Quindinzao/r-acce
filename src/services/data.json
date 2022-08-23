@@ -1,0 +1,60 @@
+{
+  "users": [
+    { 
+      "username": "John Victor Doe",
+      "email": "johndoe@acce.com",
+      "password": "johndoepass",
+      "amount": 122.00,
+      "savings_month": 70.99,
+      "savings_week": 8,
+      "benefits": [
+        {
+          "id": "0",
+          "title": "test"
+        },
+        {
+          "id": "1",
+          "title": "test"
+        },
+        {
+          "id": "2",
+          "title": "test"
+        },
+        {
+          "id": "3",
+          "title": "test"
+        },
+        {
+          "id": "4",
+          "title": "test"
+        }
+      ],
+      "friends": [
+        {
+          "id": "0",
+          "name": "Friend 1"
+        },
+        {
+          "id": "1",
+          "name": "Friend 2"
+        },
+        {
+          "id": "2",
+          "name": "Friend 3"
+        },
+        {
+          "id": "3",
+          "name": "Friend 4"
+        },
+        {
+          "id": "4",
+          "name": "Friend 5"
+        },
+        {
+          "id": "5",
+          "name": "Friend 6"
+        }
+      ]
+    }
+  ]
+}
