@@ -8,6 +8,8 @@ import React, {
   useState,
 } from 'react'
 import { Alert } from 'react-native'
+
+// Services
 import { authService } from '../services/authService'
 
 export interface AuthData {

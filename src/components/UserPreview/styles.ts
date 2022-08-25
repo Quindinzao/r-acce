@@ -3,19 +3,16 @@ import styled from 'styled-components/native'
 
 export const Container = styled.View`
   width: 100%;
-
   padding: 18px;
-
-  align-items: flex-start;
-  justify-content: flex-start;
   flex-direction: row;
+  background-color: ${props => props.theme.colors.primary};
 `
 
 export const TextContent = styled.View`
   height: 66px;
 
   align-items: flex-start;
-  justify-content: center;
+  justify-content: flex-start;
 `
 
 export const Text = styled.Text`

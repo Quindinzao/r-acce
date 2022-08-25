@@ -1,13 +1,16 @@
 // External libraries
 import React from 'react'
 
+// Components
+import UserPreview from '../../components/UserPreview'
+
 // Styled
-import { Container, TextContainer } from './styles'
+import { Container } from './styles'
 
 const Wallet: React.FC = () => {
   return (
     <Container>
-      <TextContainer>Wallet</TextContainer>
+      <UserPreview />
     </Container>
   )
 }

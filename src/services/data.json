@@ -1,10 +1,10 @@
 {
   "users": [
-    { 
+    {
+      "amount": 122.00,
       "username": "John Victor Doe",
       "email": "johndoe@acce.com",
       "password": "johndoepass",
-      "amount": 122.00,
       "savings_month": 70.99,
       "savings_week": 8,
       "benefits": [
@@ -53,6 +53,46 @@
         {
           "id": "5",
           "name": "Friend 6"
+        }
+      ]
+    },
+    { 
+      "username": "Marie Caroline Doe",
+      "email": "mariedoe@acce.com",
+      "password": "mariedoepass",
+      "amount": 122.10,
+      "savings_month": 44.09,
+      "savings_week": 8,
+      "benefits": [
+        {
+          "id": "0",
+          "title": "test"
+        },
+        {
+          "id": "1",
+          "title": "test"
+        },
+        {
+          "id": "2",
+          "title": "test"
+        }
+      ],
+      "friends": [
+        {
+          "id": "0",
+          "name": "Friend 1"
+        },
+        {
+          "id": "1",
+          "name": "Friend 2"
+        },
+        {
+          "id": "2",
+          "name": "Friend 3"
+        },
+        {
+          "id": "3",
+          "name": "Friend 4"
         }
       ]
     }

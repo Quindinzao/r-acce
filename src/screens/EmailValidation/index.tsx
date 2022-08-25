@@ -11,6 +11,9 @@ import Touchable from '../../components/Touchable'
 // Routes
 import { propsStack } from '../../routes/models'
 
+// Services
+import data from '../../services/data.json'
+
 // Assets
 import Arrow from '../../assets/images/arrow.svg'
 
@@ -28,11 +31,16 @@ const EmailValidation: React.FC = () => {
   }
 
   const handleEmailValidation = () => {
-    // Email validation code
-    if (email === 'johndoe@acce.com') {
-      navigation.navigate('PasswordValidation', { email: email })
+    const validation = data.users.find(value => {
+      if (value.email === email) {
+        return value.email
+      }
+    })
+
+    if (!validation) {
+      Alert.alert('Oops!', 'E-mail is not valid!')
     } else {
-      Alert.alert('Oops!', 'E-mail is not valid')
+      navigation.navigate('PasswordValidation', { email: email })
     }
   }
 

@@ -1,5 +1,8 @@
 // External libraries
-import React from 'react'
+import React, { useContext } from 'react'
+
+// Context
+import { AuthContext } from '../../contexts/Auth'
 
 // Services
 import data from '../../services/data.json'
@@ -11,12 +14,19 @@ import UserPicture from '../../assets/images/user_picture.svg'
 import { FriendName, FriendsList, ItemFriend } from './styles'
 
 const Friends: React.FC = () => {
+  const dataContext = useContext(AuthContext)
+  const dataUser = data.users.find(value => {
+    if (value.email === dataContext.authData?.email) {
+      return value
+    }
+  })
+
   return (
     <FriendsList
       horizontal
       showsHorizontalScrollIndicator={false}
       keyExtractor={(item: { id: number }) => item.id}
-      data={data.users[0].friends}
+      data={dataUser?.friends}
       renderItem={(friendName: any) => {
         return (
           <ItemFriend>

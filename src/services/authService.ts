@@ -1,19 +1,28 @@
 // Contexts
 import { AuthData } from '../contexts/Auth'
 
+// Services
+import data from '../services/data.json'
+
 const SignIn = async (email: string, password: string): Promise<AuthData> => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-      if (password === 'johndoepass' && email === 'johndoe@acce.com') {
+      const validation = data.users.find(value => {
+        if (value.email === email && value.password === password) {
+          return value
+        }
+      })
+
+      if (password === validation?.password && email === validation?.email) {
         resolve({
           token: 'fake-token',
           email,
-          username: 'John Doe',
+          username: validation.username,
         })
-      } else if (password === '' && email === '') {
-        reject(new Error('Password and email cannot be null!'))
+      } else if (password === '') {
+        reject(new Error('Password cannot be null!'))
       } else {
-        reject(new Error('Invalid password and/or e-mail!'))
+        reject(new Error('Invalid password!'))
       }
     }, 500)
   })
