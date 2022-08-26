@@ -3,9 +3,10 @@ import React from 'react'
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
 
 // Screens
-import TabRoutes from '../custom/tab.routes'
+import NewTravel from '../../screens/NewTravel'
 
 // Routes
+import TabRoutes from '../custom/tab.routes'
 import { propsNavigationStack } from '../models'
 
 const { Navigator, Screen } = createNativeStackNavigator<propsNavigationStack>()
@@ -17,6 +18,7 @@ const AppStack: React.FC = () => {
         headerShown: false,
       }}>
       <Screen name="TabRoutes" component={TabRoutes} />
+      <Screen name="NewTravel" component={NewTravel} />
     </Navigator>
   )
 }

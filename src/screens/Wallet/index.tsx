@@ -1,5 +1,6 @@
 // External libraries
 import React from 'react'
+import { ScrollView } from 'react-native'
 
 // Components
 import UserPreview from '../../components/UserPreview'
@@ -10,7 +11,9 @@ import { Container } from './styles'
 const Wallet: React.FC = () => {
   return (
     <Container>
-      <UserPreview />
+      <ScrollView>
+        <UserPreview />
+      </ScrollView>
     </Container>
   )
 }

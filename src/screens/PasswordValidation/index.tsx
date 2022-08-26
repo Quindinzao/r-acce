@@ -18,7 +18,7 @@ import { useAuth } from '../../contexts/Auth'
 import Arrow from '../../assets/images/arrow.svg'
 
 // Styled
-import { ButtonBack, Container, TitleHeader } from './styles'
+import { ButtonBack, Content, TitleHeader } from './styles'
 
 const PasswordValidation: React.FC<propsPasswordValidationStack> = ({
   route,
@@ -38,13 +38,13 @@ const PasswordValidation: React.FC<propsPasswordValidationStack> = ({
     <ScrollView
       contentContainerStyle={contentContainerStyle}
       keyboardShouldPersistTaps="handled">
-      <Container type="header" justifyContent="flex-start">
+      <Content type="header" justifyContent="flex-start">
         <TitleHeader>ACCE | PASSWORD</TitleHeader>
         <ButtonBack activeOpacity={0.7} onPress={() => navigation.goBack()}>
           <Arrow width={25} />
         </ButtonBack>
-      </Container>
-      <Container type="body" justifyContent="flex-end">
+      </Content>
+      <Content type="body" justifyContent="flex-end">
         <TextInput
           placeholder="Password"
           value={password}
@@ -62,7 +62,7 @@ const PasswordValidation: React.FC<propsPasswordValidationStack> = ({
           onPress={() => signIn(email, password)}
           image={<Arrow width={20} />}
         />
-      </Container>
+      </Content>
     </ScrollView>
   )
 }

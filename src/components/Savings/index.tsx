@@ -1,14 +1,14 @@
 // External libraries
 import React, { useContext } from 'react'
 
-// Assets
-import Profits from '../../assets/images/profits.svg'
-
 // Context
 import { AuthContext } from '../../contexts/Auth'
 
 // Services
 import data from '../../services/data.json'
+
+// Assets
+import Profits from '../../assets/images/profits.svg'
 
 // Styled
 import { Container, Content, SavingsText } from './styles'

@@ -2,6 +2,7 @@
 import React from 'react'
 import { Alert } from 'react-native'
 import { useNavigation } from '@react-navigation/native'
+import { useTheme } from 'styled-components/native'
 
 // Components
 import Touchable from '../../components/Touchable'
@@ -17,7 +18,6 @@ import Uber from '../../assets/images/uber.svg'
 
 // Styled
 import { Container, SocialLoginContent, Title } from './styles'
-import { useTheme } from 'styled-components/native'
 
 const Welcome: React.FC = () => {
   const { colors } = useTheme()

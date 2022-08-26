@@ -8,6 +8,7 @@ export type propsNavigationStack = {
   EmailValidation: undefined
   PasswordValidation: { email: string }
   TabRoutes: undefined
+  NewTravel: undefined
 }
 
 export type propsStack = NativeStackNavigationProp<propsNavigationStack>

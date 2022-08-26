@@ -6,7 +6,7 @@ interface ContainerProps {
   justifyContent: string
 }
 
-export const Container = styled.View<ContainerProps>`
+export const Content = styled.View<ContainerProps>`
   padding: 18px;
   flex: 1;
   align-items: center;
