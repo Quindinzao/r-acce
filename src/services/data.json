@@ -54,6 +54,30 @@
           "id": "5",
           "name": "Friend 6"
         }
+      ],
+      "past_travel": [
+        {
+          "id": 0, 
+          "current_location": {
+            "latitude": "-23.628422",
+            "longitude": "-46.656401"
+          }, 
+          "destination": {
+            "latitude": "40.745264",
+            "longitude": "-74.261475"
+          }
+        },
+        {
+          "id": 1, 
+          "current_location": {
+            "latitude": "40.926496",
+            "longitude": "-74.140298"
+          }, 
+          "destination": {
+            "latitude": "43.830476",
+            "longitude": "-79.485695"
+          }
+        }
       ]
     },
     { 
@@ -93,6 +117,30 @@
         {
           "id": "3",
           "name": "Friend 4"
+        }
+      ],
+      "past_travel": [
+        {
+          "id": 0, 
+          "current_location": {
+            "latitude": "-23.628422",
+            "longitude": "-46.656401"
+          }, 
+          "destination": {
+            "latitude": "40.745264",
+            "longitude": "-74.261475"
+          }
+        },
+        {
+          "id": 1, 
+          "current_location": {
+            "latitude": "40.926496",
+            "longitude": "-74.140298"
+          }, 
+          "destination": {
+            "latitude": "43.830476",
+            "longitude": "-79.485695"
+          }
         }
       ]
     }
