@@ -1,7 +1,10 @@
 package com.acce;
 
-// React Navigation
+// React Navigation and Splash Screen
 import android.os.Bundle;
+
+// Splash Screen
+import org.devio.rn.splashscreen.SplashScreen; 
 
 import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactActivityDelegate;
@@ -12,7 +15,8 @@ public class MainActivity extends ReactActivity {
   // React Navigation
   @Override
   protected void onCreate(Bundle savedInstanceState) {
-    super.onCreate(null);
+    SplashScreen.show(this);  
+    super.onCreate(savedInstanceState);
   }
 
   /**

@@ -1,8 +1,9 @@
 // External libraries
 import Geolocation from '@react-native-community/geolocation'
 import React, { useEffect, useState } from 'react'
-import { PermissionsAndroid, Platform } from 'react-native'
+import { Alert, PermissionsAndroid, Platform } from 'react-native'
 import MapView, { MapPressEvent, Marker } from 'react-native-maps'
+import MapViewDirections from 'react-native-maps-directions'
 import { useTheme } from 'styled-components/native'
 
 // Components
@@ -91,7 +92,18 @@ const NewTravel: React.FC = () => {
         zoomEnabled
         onPress={(event: MapPressEvent) => newMarker(event)}>
         {markers && (
-          <Marker coordinate={markers.coords} pinColor={markers.pinColor} />
+          <>
+            <Marker coordinate={markers.coords} pinColor={markers.pinColor} />
+            <MapViewDirections
+              origin={region}
+              destination={markers.coords}
+              apikey={'AIzaSyCFpO6MAYw5GIErpFdXymewwe1RfB79Zxg'}
+            />
+            {Alert.alert(
+              'OOPS!',
+              'The "Travel" function is not activated as payment is required and this app has training functionality only.',
+            )}
+          </>
         )}
       </MapView>
     </Container>
