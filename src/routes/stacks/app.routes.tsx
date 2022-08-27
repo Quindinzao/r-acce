@@ -4,6 +4,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack'
 
 // Screens
 import NewTravel from '../../screens/NewTravel'
+import PastTravel from '../../screens/PastTravel'
 
 // Routes
 import TabRoutes from '../custom/tab.routes'
@@ -19,6 +20,7 @@ const AppStack: React.FC = () => {
       }}>
       <Screen name="TabRoutes" component={TabRoutes} />
       <Screen name="NewTravel" component={NewTravel} />
+      <Screen name="PastTravel" component={PastTravel} />
     </Navigator>
   )
 }

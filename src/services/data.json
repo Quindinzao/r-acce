@@ -58,13 +58,13 @@
       "past_travel": [
         {
           "id": 0,
-          "current_location": {
-            "latitude": "-23.628422",
-            "longitude": "-46.656401"
+          "origin": {
+            "latitude": -23.628422,
+            "longitude": -46.656401
           }, 
           "destination": {
-            "latitude": "40.745264",
-            "longitude": "-74.261475"
+            "latitude": 40.745264,
+            "longitude": -74.261475
           },
           "price": 1200,
           "time": "5h",
@@ -72,13 +72,13 @@
         },
         {
           "id": 1, 
-          "current_location": {
-            "latitude": "40.926496",
-            "longitude": "-74.140298"
+          "origin": {
+            "latitude": 40.926496,
+            "longitude": -74.140298
           }, 
           "destination": {
-            "latitude": "43.830476",
-            "longitude": "-79.485695"
+            "latitude": 43.830476,
+            "longitude": -79.485695
           },
           "price": 40,
           "time": "3h",
@@ -128,13 +128,13 @@
       "past_travel": [
         {
           "id": 0, 
-          "current_location": {
-            "latitude": "-23.628422",
-            "longitude": "-46.656401"
+          "origin": {
+            "latitude": -23.628422,
+            "longitude": -46.656401
           }, 
           "destination": {
-            "latitude": "40.745264",
-            "longitude": "-74.261475"
+            "latitude": 40.745264,
+            "longitude": -74.261475
           },
           "price": 1200,
           "time": "5h",
@@ -142,13 +142,13 @@
         },
         {
           "id": 1, 
-          "current_location": {
-            "latitude": "40.926496",
-            "longitude": "-74.140298"
+          "origin": {
+            "latitude": 40.926496,
+            "longitude": -74.140298
           }, 
           "destination": {
-            "latitude": "45.397484",
-            "longitude": "-75.634262"
+            "latitude": 45.397484,
+            "longitude": -75.634262
           },
           "price": 40,
           "time": "3rh",
