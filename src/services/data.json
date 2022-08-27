@@ -65,7 +65,8 @@
           "destination": {
             "latitude": "40.745264",
             "longitude": "-74.261475"
-          }
+          },
+          "price": 200
         },
         {
           "id": 1, 
@@ -76,7 +77,8 @@
           "destination": {
             "latitude": "43.830476",
             "longitude": "-79.485695"
-          }
+          },
+          "price": 40
         }
       ]
     },
@@ -129,7 +131,8 @@
           "destination": {
             "latitude": "40.745264",
             "longitude": "-74.261475"
-          }
+          },
+          "price": 200
         },
         {
           "id": 1, 
@@ -140,7 +143,8 @@
           "destination": {
             "latitude": "43.830476",
             "longitude": "-79.485695"
-          }
+          },
+          "price": 40
         }
       ]
     }
