@@ -11,6 +11,7 @@ declare module 'styled-components' {
       quaternary: string
 
       danger: string
+      soft: string
 
       default: string
       emphasis: string

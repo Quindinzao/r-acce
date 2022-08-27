@@ -9,6 +9,7 @@ const theme: DefaultTheme = {
     quaternary: '#A68D65',
 
     danger: '#420000',
+    soft: '#AD9C80',
 
     default: '#CAD9C8',
     emphasis: '#FFCC00',

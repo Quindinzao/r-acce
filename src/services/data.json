@@ -9,55 +9,55 @@
       "savings_week": 8,
       "benefits": [
         {
-          "id": "0",
+          "id": 0,
           "title": "test"
         },
         {
-          "id": "1",
+          "id": 1,
           "title": "test"
         },
         {
-          "id": "2",
+          "id": 2,
           "title": "test"
         },
         {
-          "id": "3",
+          "id": 3,
           "title": "test"
         },
         {
-          "id": "4",
+          "id": 4,
           "title": "test"
         }
       ],
       "friends": [
         {
-          "id": "0",
+          "id": 0,
           "name": "Friend 1"
         },
         {
-          "id": "1",
+          "id": 1,
           "name": "Friend 2"
         },
         {
-          "id": "2",
+          "id": 2,
           "name": "Friend 3"
         },
         {
-          "id": "3",
+          "id": 3,
           "name": "Friend 4"
         },
         {
-          "id": "4",
+          "id": 4,
           "name": "Friend 5"
         },
         {
-          "id": "5",
+          "id": 5,
           "name": "Friend 6"
         }
       ],
       "past_travel": [
         {
-          "id": 0, 
+          "id": 0,
           "current_location": {
             "latitude": "-23.628422",
             "longitude": "-46.656401"
@@ -66,7 +66,9 @@
             "latitude": "40.745264",
             "longitude": "-74.261475"
           },
-          "price": 200
+          "price": 1200,
+          "time": "5h",
+          "type": "airplane"
         },
         {
           "id": 1, 
@@ -78,7 +80,9 @@
             "latitude": "43.830476",
             "longitude": "-79.485695"
           },
-          "price": 40
+          "price": 40,
+          "time": "3h",
+          "type": "car"
         }
       ]
     },
@@ -91,33 +95,33 @@
       "savings_week": 8,
       "benefits": [
         {
-          "id": "0",
+          "id": 0,
           "title": "test"
         },
         {
-          "id": "1",
+          "id": 1,
           "title": "test"
         },
         {
-          "id": "2",
+          "id": 2,
           "title": "test"
         }
       ],
       "friends": [
         {
-          "id": "0",
+          "id": 0,
           "name": "Friend 1"
         },
         {
-          "id": "1",
+          "id": 1,
           "name": "Friend 2"
         },
         {
-          "id": "2",
+          "id": 2,
           "name": "Friend 3"
         },
         {
-          "id": "3",
+          "id": 3,
           "name": "Friend 4"
         }
       ],
@@ -132,7 +136,9 @@
             "latitude": "40.745264",
             "longitude": "-74.261475"
           },
-          "price": 200
+          "price": 1200,
+          "time": "5h",
+          "type": "airplane"
         },
         {
           "id": 1, 
@@ -141,10 +147,12 @@
             "longitude": "-74.140298"
           }, 
           "destination": {
-            "latitude": "43.830476",
-            "longitude": "-79.485695"
+            "latitude": "45.397484",
+            "longitude": "-75.634262"
           },
-          "price": 40
+          "price": 40,
+          "time": "3rh",
+          "type": "car"
         }
       ]
     }
