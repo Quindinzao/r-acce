@@ -5,6 +5,9 @@
       "username": "John Victor Doe",
       "email": "johndoe@acce.com",
       "password": "johndoepass",
+      "card_number": "1234123412341234",
+      "card_security_code": "123",
+      "card_expiration_date": "26/01",
       "savings_month": 70.99,
       "savings_week": 8,
       "benefits": [
@@ -84,12 +87,29 @@
           "time": "3h",
           "type": "car"
         }
+      ],
+      "transactions": [
+        {
+          "id": 0,
+          "type": "deposit",
+          "value": 1400.00,
+          "depositor": "Matheus Vieira"
+        },
+        {
+          "id": 1,
+          "type": "payment",
+          "value": 16.00,
+          "received_by": "Mari da Cultura"
+        }
       ]
     },
     { 
       "username": "Marie Caroline Doe",
       "email": "mariedoe@acce.com",
       "password": "mariedoepass",
+      "card_number": "4321432143214321",
+      "card_security_code": "321",
+      "card_expiration_date": "26/01",
       "amount": 122.10,
       "savings_month": 44.09,
       "savings_week": 8,
@@ -153,6 +173,20 @@
           "price": 40,
           "time": "3rh",
           "type": "car"
+        }
+      ],
+      "transactions": [
+        {
+          "id": 0,
+          "type": "deposit",
+          "value": 1200.00,
+          "depositor": "Matheus Vieira"
+        },
+        {
+          "id": 1,
+          "type": "payment",
+          "value": 12.00,
+          "received_by": "Mari da Cultura"
         }
       ]
     }
