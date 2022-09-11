@@ -3,6 +3,7 @@ import React from 'react'
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
 
 // Screens
+import Settings from '../../screens/Settings'
 import NewTravel from '../../screens/NewTravel'
 import PastTravel from '../../screens/PastTravel'
 
@@ -19,6 +20,7 @@ const AppStack: React.FC = () => {
         headerShown: false,
       }}>
       <Screen name="TabRoutes" component={TabRoutes} />
+      <Screen name="Settings" component={Settings} />
       <Screen name="NewTravel" component={NewTravel} />
       <Screen name="PastTravel" component={PastTravel} />
     </Navigator>

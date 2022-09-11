@@ -8,6 +8,7 @@ export type propsNavigationStack = {
   EmailValidation: undefined
   PasswordValidation: { email: string }
   TabRoutes: undefined
+  Settings: undefined
   NewTravel: undefined
   PastTravel: {
     pastTravelItem: {

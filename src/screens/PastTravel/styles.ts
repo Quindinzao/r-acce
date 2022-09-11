@@ -52,7 +52,7 @@ const { width, height } = Dimensions.get('screen')
 const styles = StyleSheet.create({
   mapView: {
     width: width - 36,
-    height: height - 240,
+    height: height - 360,
     marginTop: 18,
     marginBottom: 32,
   },

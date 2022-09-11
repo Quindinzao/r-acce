@@ -13,4 +13,6 @@ export const Container = styled.TextInput.attrs({
 
   font-size: 18px;
   font-family: ${props => props.theme.fonts.h4};
+
+  color: ${props => props.theme.colors.terciary};
 `

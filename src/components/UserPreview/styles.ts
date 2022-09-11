@@ -2,10 +2,17 @@
 import styled from 'styled-components/native'
 
 export const Container = styled.View`
-  width: 100%;
   padding: 18px;
+
   flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
   background-color: ${props => props.theme.colors.primary};
+`
+
+export const Content = styled.View`
+  flex-direction: row;
 `
 
 export const TextContent = styled.View`
