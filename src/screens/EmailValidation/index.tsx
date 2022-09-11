@@ -32,7 +32,7 @@ const EmailValidation: React.FC = () => {
 
   const handleEmailValidation = () => {
     const validation = data.users.find(value => {
-      if (value.email === email) {
+      if (value.email === email.trim()) {
         return value.email
       }
     })
