@@ -40,7 +40,7 @@ const EmailValidation: React.FC = () => {
     if (!validation) {
       Alert.alert('Oops!', 'E-mail is not valid!')
     } else {
-      navigation.navigate('PasswordValidation', { email: email })
+      navigation.navigate('PasswordValidation', { email: email.trim() })
     }
   }
 

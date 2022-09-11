@@ -12,8 +12,8 @@ import { Container } from './styles'
 const Wallet: React.FC = () => {
   return (
     <Container>
+      <UserPreview />
       <ScrollView>
-        <UserPreview />
         <CardImage />
       </ScrollView>
     </Container>

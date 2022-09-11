@@ -1,6 +1,11 @@
 // External libraries
 import styled from 'styled-components/native'
 
+export const Container = styled.View`
+  padding-bottom: 24px;
+  background-color: ${props => props.theme.colors.primary};
+`
+
 export const BenefitsList = styled.FlatList`
   max-height: 180px;
 
